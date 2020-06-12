@@ -4,7 +4,7 @@ class Block {
 	constructor (index, data, previousHash = '') {
 		this.index = index;
 		this.date = new Date();
-		this.data = date;
+		this.data = data;
 		this.previousHash = previousHash;
 		this.hash = this.createHash();
 	}
@@ -17,4 +17,3 @@ class Block {
 block = new Block (0, 'prueba');
 console.log(JSON.stringify(block, null, 2));
 
-npm install crypto-js  --save
